@@ -113,7 +113,7 @@ class PhotosList extends StatelessWidget {
   ),
   itemCount: photos.length,
   itemBuilder: (context, index) {
-  return SizedBox(height: 100, child: Card(child: Column( crossAxisAlignment: CrossAxisAlignment.start, mainAxisSize: MainAxisSize.min, children: <Widget>[
+  return SizedBox(child: Card(child: Column( crossAxisAlignment: CrossAxisAlignment.start, mainAxisSize: MainAxisSize.min, children: <Widget>[
         Image.network(photos[index].PREVIEW_PICTURE_SRC),
         Text(photos[index].ACTIVE_FROM, style: TextStyle(fontStyle: FontStyle.italic, fontSize: 17),),
         Text(photos[index].TITLE, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),),
